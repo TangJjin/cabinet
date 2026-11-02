@@ -1,0 +1,56 @@
+# Keil / ARM build outputs
+*.o
+*.d
+*.axf
+*.elf
+*.map
+*.htm
+*.dep
+*.crf
+*.scvd
+*.lst
+*.bin
+*.hex
+
+# Build directories
+build/
+Debug/
+Release/
+Objects/
+Listings/
+/MDK-ARM/Cabinet_Bootloader/
+/MDK-ARM/Cabinet_CM4_Gate/
+/MDK-ARM/MIPIProject_CM4/
+/MDK-ARM/MIPIProject_CM7/
+
+# Visual Studio / simulator outputs
+.vs/
+CMakeFiles/
+cmake-build-*/
+out/
+
+# OS/editor files
+.vscode/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+# Cabinet tools and Keil intermediate command files
+node_modules/
+__pycache__/
+*.pyc
+*.log
+*.__i
+*.lnp
+*.bak
+*.uvguix.*
+
+# Local project brief and development-only material
+/项目说明.md
+/tmp/
+/_ppt_text_utf8.txt
+/STM32H747_UI/
+/Middlewares/WIZnet/
+*.uvoptx

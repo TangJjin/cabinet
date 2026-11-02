@@ -1,0 +1,16 @@
+; *************************************************************
+; *** Scatter-Loading Description File for STM32H747 CM7 ***
+; *************************************************************
+
+LR_IROM1 0x08000000 0x00100000  {    ; CM7 使用 Flash 前 1MB
+  ER_IROM1 0x08000000 0x00100000  {  
+   *.o (RESET, +First)
+   *(InRoot$$Sections)
+   .ANY (+RO)
+  }
+  
+  ; 修正：使用 512KB 的 AXI SRAM (RAM_D1)
+  RW_IRAM1 0x24000000 0x00080000  {  
+   .ANY (+RW +ZI)
+  }
+}
